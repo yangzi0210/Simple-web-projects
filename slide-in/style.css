@@ -1,0 +1,21 @@
+.slide-in {
+  width: 100px;
+  height: 100px;
+  background-color: #dfe70b;
+  position: absolute;
+  left: -100px; /* 初始位置在屏幕左侧外部 */
+  top: 50%; /* 使元素垂直居中 */
+  transform: translateY(-50%) rotate(0deg); /* 初始旋转角度为0度 */
+  animation: slideIn 2s linear forwards; /* 应用动画，2秒匀速向右滑入 */
+}
+
+@keyframes slideIn {
+  0% {
+    left: -100px;
+    transform: translateY(-50%) rotate(0deg);
+  }
+  100% {
+    left: calc(100% + 100px); /* 滑动到屏幕右侧外部 */
+    transform: translateY(-50%) rotate(360deg); /* 旋转360度 */
+  }
+}
