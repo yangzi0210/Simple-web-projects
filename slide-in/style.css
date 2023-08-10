@@ -10,11 +10,11 @@
 }
 
 @keyframes slideIn {
-  0% {
+  /* 0% {
     left: -100px;
     transform: translateY(-50%) rotate(0deg);
-  }
-  100% {
+  } */
+  to {
     left: calc(100% + 100px); /* 滑动到屏幕右侧外部 */
     transform: translateY(-50%) rotate(360deg); /* 旋转360度 */
   }
